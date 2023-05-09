@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Browser {
    // public static RemoteWebDriver driver;
-    public static WebDriver driver;
+    public static RemoteWebDriver driver;
     public static Actions act;
     public static String fileProperties(String propertiesData)//browser
     {
