@@ -49,8 +49,8 @@ public class Browser {
         String browserstack_Username=Browser.fileProperties("bsUsername");
         String browserstack_AccessKey = Browser.fileProperties("bsAccessKey");
         if (choice.equalsIgnoreCase("Chrome")) {
-            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver.exe");
-            driver = new ChromeDriver();
+           WebDriverManager.chromedriver().setup(); 
+           driver = new ChromeDriver();
             act= new Actions(driver);
         } else if (choice.equalsIgnoreCase("Firefox")) {
             WebDriverManager.firefoxdriver().setup();
