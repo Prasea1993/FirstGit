@@ -53,7 +53,7 @@ public class Browser {
            ChromeOptions options = new ChromeOptions();
            options.addArguments("--no-sandbox");
            options.addArguments("--disable-dev-shm-usage");
-           options.addArguments("--remote-allow-origins=*")
+           options.addArguments("--remote-allow-origins=*");
            options.addArguments("--headless");
            driver = new ChromeDriver(options);
            
